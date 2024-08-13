@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class employee{
+class Employee{
     int salary;
 
     public:
@@ -14,7 +14,7 @@ class employee{
 };
 
 int main(){
-    employee obj1;
+    Employee obj1;
     obj1.setSalary(50000);
     cout<<obj1.getSalary()<<endl;
 
