@@ -7,17 +7,19 @@ class Rectangle{
     int area;
 
     public:
-        void rectangle(int l){
-            length = l;
+        Rectangle(){
+            length = 0;
+            width = 0;
+            area = 0;
         }
-        void rectangle(int l, int w){
+
+        void sqArea(int l){
             length = l;
-            width = w;
-        }
-        void sqArea(){
             area = length * length;
         }
-        void rectArea(){
+        void rectArea(int l, int w){
+            length = l;
+            width = w;
             area = length * width;
         }
         int getSqArea(){
@@ -31,11 +33,9 @@ class Rectangle{
 
 int main(){
     Rectangle obj;
-    obj.rectangle(5);
-    obj.sqArea();
+    obj.sqArea(5);
     cout<<"Square Area: "<<obj.getSqArea()<<endl;
-
-    obj.rectangle(5,3);
-    obj.rectArea();
+    
+    obj.rectArea(5,4);
     cout<<"Rectangle Area: "<<obj.getRectArea()<<endl;
 }
