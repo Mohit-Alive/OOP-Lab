@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 class Marks
 {
 
@@ -23,6 +24,7 @@ public:
         cout << percentage << endl;
     }
 };
+
 class Student
 {
     Marks Mobj;
@@ -43,11 +45,11 @@ public:
 
 int main()
 {
-    Marks mk[5] = {Marks(100, 80), Marks(101, 56), Marks(102, 87), Marks(61, 00), Marks(91, 05)};
+    Marks mk[5] = {Marks(100, 87), Marks(101, 56), Marks(102, 87), Marks(103, 78), Marks(104, 95)};
     Student st[5];
     for (int i = 0; i < 5; i++)
     {
-        cout << "ENTER THE NAME";
+        cout << "Enter the name: ";
         st[i].setName();
     }
     for (int i = 0; i < 5; i++)
