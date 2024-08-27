@@ -20,6 +20,7 @@ class Circle{
             return PI*radius*radius;
         }
 };
+int Circle:: count = 1;
 
 int main() {
     Circle obj(5);
