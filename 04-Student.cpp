@@ -3,7 +3,6 @@ using namespace std;
 
 class Marks
 {
-
     int rno;
     float percentage;
 
